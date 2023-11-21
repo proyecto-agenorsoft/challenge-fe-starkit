@@ -1,0 +1,69 @@
+/* Estilos para la visualización de datos en vivo de criptomonedas */
+.live-data {
+  max-width: 800px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.live-data h2 {
+  color: #fff;
+  background-color: #333;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+.live-data p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.live-data p:last-child {
+  border-bottom: none;
+}
+
+.live-data span.value {
+  font-weight: bold;
+}
+
+/* Estilos para los contenedores de enlaces */
+.links-container {
+  text-align: center;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.market-overview-link,
+.coin-list-link {
+  display: inline;
+  margin: 0 5px;
+}
+
+.market-overview-link a,
+.coin-list-link a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.market-overview-link a:hover,
+.coin-list-link a:hover {
+  color: #555;
+}
+
+/* Estilo para el separador entre botones */
+.links-container span.separator {
+  color: #333;
+}

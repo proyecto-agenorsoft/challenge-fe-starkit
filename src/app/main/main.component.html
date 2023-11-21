@@ -1,0 +1,16 @@
+<div class="coin-list">
+  <h2>Lista de Criptomonedas</h2>
+  <ul>
+    <li *ngFor="let coin of coins">
+      <a [routerLink]="['/live', coin.symbol]">
+        <span>{{ coin.rank }}. {{ coin.name }} </span>
+        <span>{{ coin.symbol }}</span>
+      </a>
+    </li>
+  </ul>
+
+  <!-- Enlace a la visión general del mercado -->
+  <div class="market-overview-link">
+    <a [routerLink]="['/overview']">Visión General del Mercado</a>
+  </div>
+</div>

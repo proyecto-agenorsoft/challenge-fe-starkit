@@ -1,0 +1,27 @@
+<div *ngIf="cryptoData?.data" class="live-data">
+  <h2>{{ cryptoData.data.symbol }}</h2>
+  <p>Compra (Buy): {{ cryptoData.data.buy }}</p>
+  <p>Venta (Sell): {{ cryptoData.data.sell }}</p>
+  <p>Tasa de Cambio (Change Rate): {{ cryptoData.data.changeRate }}</p>
+  <p>Cambio de Precio (Change Price): {{ cryptoData.data.changePrice }}</p>
+  <p>Máximo (High): {{ cryptoData.data.high }}</p>
+  <p>Mínimo (Low): {{ cryptoData.data.low }}</p>
+  <p>Volumen (Vol): {{ cryptoData.data.vol }}</p>
+  <p>Valor de Volumen (Vol Value): {{ cryptoData.data.volValue }}</p>
+  <p>Último (Last): {{ cryptoData.data.last }}</p>
+  <p>Precio Promedio (Average Price): {{ cryptoData.data.averagePrice }}</p>
+  <p>Tasa de Comisión para Taker (Taker Fee Rate): {{ cryptoData.data.takerFeeRate }}</p>
+  <p>Tasa de Comisión para Maker (Maker Fee Rate): {{ cryptoData.data.makerFeeRate }}</p>
+  <p>Coeficiente de Taker (Taker Coefficient): {{ cryptoData.data.takerCoefficient }}</p>
+  <p>Coeficiente de Maker (Maker Coefficient): {{ cryptoData.data.makerCoefficient }}</p>
+</div>
+
+<div class="links-container">
+  <div class="market-overview-link">
+    <a [routerLink]="['/overview']">Visión General del Mercado</a>
+  </div>
+  <span class="separator">|</span>
+  <div class="coin-list-link">
+    <a [routerLink]="['']">Lista de Monedas</a>
+  </div>
+</div>
